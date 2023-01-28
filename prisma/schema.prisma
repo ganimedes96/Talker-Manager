@@ -11,13 +11,23 @@ datasource db {
 }
 
 model Talker {
-  id        String   @id @default(uuid())
+  id        String    @id @default(uuid())
   name      String
   email     String
   password  String
   age       Int
   watchedAt DateTime? @default(now())
   rate      Int
+  userId    String
+  user      User      @relation(fields: [userId], references: [id])
 
   @@map("talkers")
+}
+
+model User {
+  id       String   @id @default(uuid())
+  name     String
+  password String
+  email    String
+  Talker   Talker[]
 }

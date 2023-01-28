@@ -1,6 +1,6 @@
 import express from "express";
-import { CreateTalkerController } from "../controllers/create-talker.controller";
-import { GetTalkerController } from "../controllers/get-talkers.controller";
+import { CreateTalkerController } from "../controllers/talker-controllers/create-talker.controller";
+import { GetTalkerController } from "../controllers/talker-controllers/get-talkers.controller";
 // import { TalkerValidate } from "../middleware/talker-validate";
 
 export const routerTalker = express.Router();

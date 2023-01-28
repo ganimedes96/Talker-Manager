@@ -1,6 +1,6 @@
-import { PrismaGetTalkersRepository } from "../repositories/prisma/get-talkers-repository";
+import { PrismaGetTalkersRepository } from "../../../app/repositories/prisma/talker-prisma/get-talkers-repository";
 import { Response, Request } from "express";
-import { GetTalkerService } from "../services/get-talkers.service";
+import { GetTalkerService } from "../../../app/services/talker-services/get-talkers.service";
 
 export class GetTalkerController {
   private prismaGetTalkersRepository: PrismaGetTalkersRepository;
@@ -13,8 +13,7 @@ export class GetTalkerController {
   }
 
   public getTalks = async (req: Request, res: Response) => {
-    
-    const talks = await this.getTalkerService.execute()
-    res.status(200).json(talks)
-  }
+    const talks = await this.getTalkerService.execute();
+    res.status(200).json(talks);
+  };
 }
