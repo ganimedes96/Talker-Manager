@@ -17,10 +17,12 @@ export class LoginService {
       throw new CustomError("Incorrect email or password", 401);
 
     const [result] = user?.map((item) => {
-      return { email: item.email, name: item.name };
+      return {id: item.id, email: item.email, name: item.name };
     });
 
+
     const token = Token.generateToken({
+      id: result.id,
       email: result.email,
       name: result.name,
     });

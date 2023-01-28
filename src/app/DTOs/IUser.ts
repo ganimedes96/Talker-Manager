@@ -11,7 +11,7 @@ export interface IUserID {
   }
   
   
-  export interface IUserLogin extends IUserEmail {
+  export interface IUserLogin extends IUserEmail{
     
     password?: string;
   }

@@ -12,7 +12,7 @@ export class CreateUserService {
   
 
   async execute(request: CreateUserServiceRequest) {
-    const { name, email, password } = request;
+    const { name, email, password, id } = request;
     if (!name) {
       throw new Error("name is required");
     }

@@ -1,7 +1,7 @@
 import { UserRepository } from "../../users-repository";
 import { prisma } from "../../../../prisma";
 import { TalkersCreateData, TalkersRepository } from "../../talkers-repository";
-import { IUserEmail } from "../../../DTOs/IUser";
+import { IUserEmail, IUserID } from "../../../DTOs/IUser";
 
 export class PrismaTalkerRepository implements TalkersRepository {
   async create({
@@ -24,13 +24,13 @@ export class PrismaTalkerRepository implements TalkersRepository {
     });
     return talker;
   }
-  async findUserId(email : string) {
-    const findId = await prisma.user.findMany({
-      where: { email },
-      select: {
-        id: true,
-      },
-    });
-    return findId;
+  async findTalkerById(id: string) {
+    const findTalker = await prisma.talker.findUnique({ where: { id } });
+    return findTalker;
+  }
+
+  async deleteTalkerById(id: string) {
+     await prisma.talker.delete({ where: { id } });
+
   }
 }

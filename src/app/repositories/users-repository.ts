@@ -1,6 +1,7 @@
 import {IUserLogin, IUserCreateData } from '../DTOs/IUser'
 
 interface IUserCreate {
+  id: string;
   name: string;
   password: string;
   email: string;

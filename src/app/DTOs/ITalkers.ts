@@ -3,7 +3,7 @@ export interface ITalker {
   name: string;
   email: string;
   password: string;
-  userId: string;
+  userId?: string;
   age: number;
   rate: number;
 }

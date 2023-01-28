@@ -10,5 +10,5 @@ export interface ITokenConfig {
   
   export interface IDecodeUserToken {
     decode: string
-    email:string
+    id:string
   }

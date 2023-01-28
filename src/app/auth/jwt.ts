@@ -1,7 +1,6 @@
 import { NextFunction, Request, Response } from "express";
 import jwt from "jsonwebtoken";
 import { ITokenConfig, ITokenPayload, IDecodeUserToken } from "../DTOs/ITokens";
-import { IUserEmail } from "../DTOs/IUser";
 import "dotenv/config";
 import { CustomError } from "../error/customError";
 const secretKey = process.env.JWT_SECRET as string;
@@ -24,7 +23,7 @@ export class Token {
   ): void => {
     const { authorization } = req.headers;
     if (!authorization) {
-      throw new CustomError("Token must be a valid token", 401);
+      throw new CustomError("Token not found!", 401);
     }
 
     try {
@@ -33,12 +32,14 @@ export class Token {
     } catch (error) {
       throw new CustomError("Token must be a valid token", 401);
     }
+
+    next();
   };
 
   static decodeToken = (token: string) => {
     const decode = jwt.decode(token) as IDecodeUserToken;
 
-    const { email } = decode;
-    return email;
+    const { id } = decode;
+    return id;
   };
 }
