@@ -21,12 +21,9 @@ export class TalkerService {
     }
     return null;
   }
-
   async create(request: CreateTalkerServiceRequest) {
     const { name, email, password, age, rate, userId } = request;
-    if (!name) {
-      throw new Error("name is required");
-    }
+    
     const result = await this.talkersRepository.create({
       name,
       email,
@@ -37,14 +34,22 @@ export class TalkerService {
     });
     return this.createTalkerDomain(result);
   }
+  async findManyTalkers() {
+    const talkers = await this.talkersRepository.findMany();
+    return talkers.map((talker) => this.createTalkerDomain(talker))
+  }
 
-  async findTalkerById(id:string) {
-    const resultRequest = await this.talkersRepository.findTalkerById(id)
-    return this.createTalkerDomain(resultRequest)
+  async findTalkerById(id: string) {
+    const resultRequest = await this.talkersRepository.findTalkerById(id);
+    return this.createTalkerDomain(resultRequest);
   }
 
   async deleteTalkerById(id: string) {
-    await this.talkersRepository.deleteTalkerById(id)
-  
+    await this.talkersRepository.deleteTalkerById(id);
+  }
+
+  async updateTalkerById(data: ITalker) {
+    const resultRequest = await this.talkersRepository.updateTalkerById(data);
+    return resultRequest;
   }
 }

@@ -5,7 +5,7 @@ export class TalkerDomain {
     private name: string;
     private email: string;
     private password: string;
-    private userId: string
+    private userId?: string
     private age: number;
     private rate: number;
 
@@ -24,6 +24,9 @@ export class TalkerDomain {
    }
 
    public setName(name: string) {
+     if (name.length === 0) {
+      throw new Error("name is");
+    }
     this.name = name
    }
 

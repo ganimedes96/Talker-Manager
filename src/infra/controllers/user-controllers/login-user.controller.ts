@@ -14,7 +14,8 @@ export class LoginUserController {
     public login = async (req: Request, res: Response) => {
       
      const token = await this.loginUserService.login(req.body);
-      return res.status(201).json({ token});
+     
+      return res.status(201).json(token);
     };
   }
   

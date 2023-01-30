@@ -12,6 +12,6 @@ interface IUserCreate {
   } 
 
   export interface LoginRepository {
-    login: (data: IUserLogin) => Promise<IUserCreateData[] | null>
+    login: (data: IUserLogin) => Promise<IUserCreateData | null>
   }
 

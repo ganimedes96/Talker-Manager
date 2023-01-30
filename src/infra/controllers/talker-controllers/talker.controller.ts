@@ -1,3 +1,4 @@
+import { ITalker } from "./../../../app/DTOs/ITalkers";
 import { PrismaTalkerRepository } from "../../../app/repositories/prisma/talker-prisma/talkers-repository";
 import { Response, Request } from "express";
 import { TalkerService } from "../../../app/services/talker-services/talker.service";
@@ -8,9 +9,7 @@ export class TalkerController {
   private talkerService: TalkerService;
   constructor() {
     this.prismaTalkersRepository = new PrismaTalkerRepository();
-    this.talkerService = new TalkerService(
-      this.prismaTalkersRepository
-    );
+    this.talkerService = new TalkerService(this.prismaTalkersRepository);
   }
   public createTalker = async (req: Request, res: Response) => {
     const { name, email, password, age, rate } = req.body;
@@ -25,11 +24,13 @@ export class TalkerController {
       rate,
       userId,
     };
-    if (!name) {
-      return res.status(404).json({ message: "name is required " });
-    }
+    
     const result = await this.talkerService.create(userData);
     return res.status(201).json(result);
+  };
+  public getTalks = async (_req: Request, res: Response) => {
+    const talks = await this.talkerService.findManyTalkers();
+    return res.status(200).json(talks);
   };
 
   public findTakerById = async (req: Request, res: Response) => {
@@ -40,8 +41,25 @@ export class TalkerController {
   };
 
   public deleteTalkerById = async (req: Request, res: Response) => {
-    const user = req.params
-    await this.talkerService.deleteTalkerById(user.id)
-    return res.status(204).send()
+    const user = req.params;
+    await this.talkerService.deleteTalkerById(user.id);
+    return res.status(204).send();
+  };
+
+  public updateTalkerById = async (req: Request, res: Response) => {
+    const { name, email, password, age, rate } = req.body;
+    const { id } = req.params;
+    const userData: ITalker = {
+      id,
+      name,
+      email,
+      password,
+      age,
+      rate,
+    };
+
+    const resultRequest = await this.talkerService.updateTalkerById(userData);
+
+    return res.status(200).json(resultRequest);
   };
 }

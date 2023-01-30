@@ -1,11 +1,96 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1674933323161" clover="3.2.0">
-  <project timestamp="1674933323162" name="All files">
-    <metrics statements="107" coveredstatements="74" conditionals="6" coveredconditionals="5" methods="17" coveredmethods="4" elements="130" coveredelements="83" complexity="0" loc="107" ncloc="107" packages="2" files="2" classes="2"/>
-    <package name="domains">
-      <metrics statements="62" coveredstatements="34" conditionals="0" coveredconditionals="0" methods="12" coveredmethods="0"/>
+<coverage generated="1675086717448" clover="3.2.0">
+  <project timestamp="1675086717448" name="All files">
+    <metrics statements="563" coveredstatements="340" conditionals="52" coveredconditionals="46" methods="67" coveredmethods="35" elements="682" coveredelements="421" complexity="0" loc="563" ncloc="563" packages="12" files="19" classes="19"/>
+    <package name="src">
+      <metrics statements="25" coveredstatements="22" conditionals="4" coveredconditionals="4" methods="5" coveredmethods="4"/>
+      <file name="app.ts" path="C:\Users\centa\OneDrive\Documentos\projects\talker-manager\src\app.ts">
+        <metrics statements="20" coveredstatements="17" conditionals="3" coveredconditionals="3" methods="4" coveredmethods="3"/>
+        <line num="1" count="1" type="stmt"/>
+        <line num="2" count="1" type="stmt"/>
+        <line num="3" count="1" type="stmt"/>
+        <line num="4" count="1" type="cond" truecount="1" falsecount="0"/>
+        <line num="5" count="1" type="stmt"/>
+        <line num="6" count="1" type="cond" truecount="1" falsecount="0"/>
+        <line num="7" count="1" type="stmt"/>
+        <line num="8" count="1" type="stmt"/>
+        <line num="9" count="1" type="stmt"/>
+        <line num="10" count="1" type="stmt"/>
+        <line num="11" count="1" type="cond" truecount="1" falsecount="0"/>
+        <line num="12" count="1" type="stmt"/>
+        <line num="13" count="1" type="stmt"/>
+        <line num="14" count="1" type="stmt"/>
+        <line num="15" count="1" type="stmt"/>
+        <line num="16" count="1" type="stmt"/>
+        <line num="17" count="0" type="stmt"/>
+        <line num="18" count="0" type="stmt"/>
+        <line num="19" count="0" type="stmt"/>
+        <line num="20" count="1" type="stmt"/>
+      </file>
+      <file name="prisma.ts" path="C:\Users\centa\OneDrive\Documentos\projects\talker-manager\src\prisma.ts">
+        <metrics statements="5" coveredstatements="5" conditionals="1" coveredconditionals="1" methods="1" coveredmethods="1"/>
+        <line num="1" count="1" type="stmt"/>
+        <line num="2" count="1" type="stmt"/>
+        <line num="3" count="1" type="cond" truecount="1" falsecount="0"/>
+        <line num="4" count="1" type="stmt"/>
+        <line num="5" count="1" type="stmt"/>
+      </file>
+    </package>
+    <package name="src.app.auth">
+      <metrics statements="45" coveredstatements="22" conditionals="2" coveredconditionals="2" methods="4" coveredmethods="2"/>
+      <file name="jwt.ts" path="C:\Users\centa\OneDrive\Documentos\projects\talker-manager\src\app\auth\jwt.ts">
+        <metrics statements="45" coveredstatements="22" conditionals="2" coveredconditionals="2" methods="4" coveredmethods="2"/>
+        <line num="1" count="1" type="stmt"/>
+        <line num="2" count="1" type="stmt"/>
+        <line num="3" count="1" type="stmt"/>
+        <line num="4" count="1" type="stmt"/>
+        <line num="5" count="1" type="stmt"/>
+        <line num="6" count="1" type="stmt"/>
+        <line num="7" count="1" type="stmt"/>
+        <line num="8" count="1" type="cond" truecount="1" falsecount="0"/>
+        <line num="9" count="1" type="cond" truecount="1" falsecount="0"/>
+        <line num="10" count="1" type="stmt"/>
+        <line num="11" count="1" type="stmt"/>
+        <line num="12" count="1" type="stmt"/>
+        <line num="13" count="1" type="stmt"/>
+        <line num="14" count="1" type="stmt"/>
+        <line num="15" count="1" type="stmt"/>
+        <line num="16" count="1" type="stmt"/>
+        <line num="17" count="1" type="stmt"/>
+        <line num="18" count="1" type="stmt"/>
+        <line num="19" count="1" type="stmt"/>
+        <line num="20" count="0" type="stmt"/>
+        <line num="21" count="0" type="stmt"/>
+        <line num="22" count="0" type="stmt"/>
+        <line num="23" count="0" type="stmt"/>
+        <line num="24" count="0" type="stmt"/>
+        <line num="25" count="0" type="stmt"/>
+        <line num="26" count="0" type="stmt"/>
+        <line num="27" count="0" type="stmt"/>
+        <line num="28" count="0" type="stmt"/>
+        <line num="29" count="0" type="stmt"/>
+        <line num="30" count="0" type="stmt"/>
+        <line num="31" count="0" type="stmt"/>
+        <line num="32" count="0" type="stmt"/>
+        <line num="33" count="0" type="stmt"/>
+        <line num="34" count="0" type="stmt"/>
+        <line num="35" count="0" type="stmt"/>
+        <line num="36" count="0" type="stmt"/>
+        <line num="37" count="0" type="stmt"/>
+        <line num="38" count="1" type="stmt"/>
+        <line num="39" count="1" type="stmt"/>
+        <line num="40" count="0" type="stmt"/>
+        <line num="41" count="0" type="stmt"/>
+        <line num="42" count="0" type="stmt"/>
+        <line num="43" count="0" type="stmt"/>
+        <line num="44" count="0" type="stmt"/>
+        <line num="45" count="1" type="stmt"/>
+      </file>
+    </package>
+    <package name="src.app.domains">
+      <metrics statements="65" coveredstatements="34" conditionals="0" coveredconditionals="0" methods="12" coveredmethods="0"/>
       <file name="talkers.ts" path="C:\Users\centa\OneDrive\Documentos\projects\talker-manager\src\app\domains\talkers.ts">
-        <metrics statements="62" coveredstatements="34" conditionals="0" coveredconditionals="0" methods="12" coveredmethods="0"/>
+        <metrics statements="65" coveredstatements="34" conditionals="0" coveredconditionals="0" methods="12" coveredmethods="0"/>
         <line num="1" count="1" type="stmt"/>
         <line num="2" count="1" type="stmt"/>
         <line num="3" count="1" type="stmt"/>
@@ -34,46 +119,179 @@
         <line num="26" count="1" type="stmt"/>
         <line num="27" count="0" type="stmt"/>
         <line num="28" count="0" type="stmt"/>
-        <line num="29" count="1" type="stmt"/>
-        <line num="30" count="1" type="stmt"/>
+        <line num="29" count="0" type="stmt"/>
+        <line num="30" count="0" type="stmt"/>
         <line num="31" count="0" type="stmt"/>
-        <line num="32" count="0" type="stmt"/>
+        <line num="32" count="1" type="stmt"/>
         <line num="33" count="1" type="stmt"/>
-        <line num="34" count="1" type="stmt"/>
+        <line num="34" count="0" type="stmt"/>
         <line num="35" count="0" type="stmt"/>
-        <line num="36" count="0" type="stmt"/>
+        <line num="36" count="1" type="stmt"/>
         <line num="37" count="1" type="stmt"/>
-        <line num="38" count="1" type="stmt"/>
+        <line num="38" count="0" type="stmt"/>
         <line num="39" count="0" type="stmt"/>
-        <line num="40" count="0" type="stmt"/>
+        <line num="40" count="1" type="stmt"/>
         <line num="41" count="1" type="stmt"/>
-        <line num="42" count="1" type="stmt"/>
+        <line num="42" count="0" type="stmt"/>
         <line num="43" count="0" type="stmt"/>
-        <line num="44" count="0" type="stmt"/>
+        <line num="44" count="1" type="stmt"/>
         <line num="45" count="1" type="stmt"/>
-        <line num="46" count="1" type="stmt"/>
+        <line num="46" count="0" type="stmt"/>
         <line num="47" count="0" type="stmt"/>
-        <line num="48" count="0" type="stmt"/>
+        <line num="48" count="1" type="stmt"/>
         <line num="49" count="1" type="stmt"/>
-        <line num="50" count="1" type="stmt"/>
+        <line num="50" count="0" type="stmt"/>
         <line num="51" count="0" type="stmt"/>
-        <line num="52" count="0" type="stmt"/>
+        <line num="52" count="1" type="stmt"/>
         <line num="53" count="1" type="stmt"/>
-        <line num="54" count="1" type="stmt"/>
+        <line num="54" count="0" type="stmt"/>
         <line num="55" count="0" type="stmt"/>
-        <line num="56" count="0" type="stmt"/>
+        <line num="56" count="1" type="stmt"/>
         <line num="57" count="1" type="stmt"/>
-        <line num="58" count="1" type="stmt"/>
+        <line num="58" count="0" type="stmt"/>
         <line num="59" count="0" type="stmt"/>
-        <line num="60" count="0" type="stmt"/>
+        <line num="60" count="1" type="stmt"/>
         <line num="61" count="1" type="stmt"/>
-        <line num="62" count="1" type="stmt"/>
+        <line num="62" count="0" type="stmt"/>
+        <line num="63" count="0" type="stmt"/>
+        <line num="64" count="1" type="stmt"/>
+        <line num="65" count="1" type="stmt"/>
       </file>
     </package>
-    <package name="services.talker-services">
-      <metrics statements="45" coveredstatements="40" conditionals="6" coveredconditionals="5" methods="5" coveredmethods="4"/>
+    <package name="src.app.error">
+      <metrics statements="7" coveredstatements="4" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="0"/>
+      <file name="customError.ts" path="C:\Users\centa\OneDrive\Documentos\projects\talker-manager\src\app\error\customError.ts">
+        <metrics statements="7" coveredstatements="4" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="0"/>
+        <line num="1" count="1" type="stmt"/>
+        <line num="2" count="1" type="stmt"/>
+        <line num="3" count="1" type="stmt"/>
+        <line num="4" count="0" type="stmt"/>
+        <line num="5" count="0" type="stmt"/>
+        <line num="6" count="0" type="stmt"/>
+        <line num="7" count="1" type="stmt"/>
+      </file>
+    </package>
+    <package name="src.app.repositories.prisma.talker-prisma">
+      <metrics statements="63" coveredstatements="15" conditionals="1" coveredconditionals="1" methods="6" coveredmethods="1"/>
+      <file name="talkers-repository.ts" path="C:\Users\centa\OneDrive\Documentos\projects\talker-manager\src\app\repositories\prisma\talker-prisma\talkers-repository.ts">
+        <metrics statements="63" coveredstatements="15" conditionals="1" coveredconditionals="1" methods="6" coveredmethods="1"/>
+        <line num="1" count="1" type="stmt"/>
+        <line num="2" count="1" type="stmt"/>
+        <line num="3" count="1" type="stmt"/>
+        <line num="4" count="1" type="stmt"/>
+        <line num="5" count="1" type="stmt"/>
+        <line num="6" count="1" type="stmt"/>
+        <line num="7" count="1" type="cond" truecount="1" falsecount="0"/>
+        <line num="8" count="1" type="stmt"/>
+        <line num="9" count="0" type="stmt"/>
+        <line num="10" count="0" type="stmt"/>
+        <line num="11" count="0" type="stmt"/>
+        <line num="12" count="0" type="stmt"/>
+        <line num="13" count="0" type="stmt"/>
+        <line num="14" count="0" type="stmt"/>
+        <line num="15" count="0" type="stmt"/>
+        <line num="16" count="0" type="stmt"/>
+        <line num="17" count="0" type="stmt"/>
+        <line num="18" count="0" type="stmt"/>
+        <line num="19" count="0" type="stmt"/>
+        <line num="20" count="0" type="stmt"/>
+        <line num="21" count="0" type="stmt"/>
+        <line num="22" count="0" type="stmt"/>
+        <line num="23" count="0" type="stmt"/>
+        <line num="24" count="0" type="stmt"/>
+        <line num="25" count="0" type="stmt"/>
+        <line num="26" count="0" type="stmt"/>
+        <line num="27" count="0" type="stmt"/>
+        <line num="28" count="1" type="stmt"/>
+        <line num="29" count="0" type="stmt"/>
+        <line num="30" count="0" type="stmt"/>
+        <line num="31" count="0" type="stmt"/>
+        <line num="32" count="1" type="stmt"/>
+        <line num="33" count="0" type="stmt"/>
+        <line num="34" count="0" type="stmt"/>
+        <line num="35" count="0" type="stmt"/>
+        <line num="36" count="1" type="stmt"/>
+        <line num="37" count="1" type="stmt"/>
+        <line num="38" count="0" type="stmt"/>
+        <line num="39" count="0" type="stmt"/>
+        <line num="40" count="1" type="stmt"/>
+        <line num="41" count="1" type="stmt"/>
+        <line num="42" count="0" type="stmt"/>
+        <line num="43" count="0" type="stmt"/>
+        <line num="44" count="0" type="stmt"/>
+        <line num="45" count="0" type="stmt"/>
+        <line num="46" count="0" type="stmt"/>
+        <line num="47" count="0" type="stmt"/>
+        <line num="48" count="0" type="stmt"/>
+        <line num="49" count="0" type="stmt"/>
+        <line num="50" count="0" type="stmt"/>
+        <line num="51" count="0" type="stmt"/>
+        <line num="52" count="0" type="stmt"/>
+        <line num="53" count="0" type="stmt"/>
+        <line num="54" count="0" type="stmt"/>
+        <line num="55" count="0" type="stmt"/>
+        <line num="56" count="0" type="stmt"/>
+        <line num="57" count="0" type="stmt"/>
+        <line num="58" count="0" type="stmt"/>
+        <line num="59" count="0" type="stmt"/>
+        <line num="60" count="0" type="stmt"/>
+        <line num="61" count="0" type="stmt"/>
+        <line num="62" count="0" type="stmt"/>
+        <line num="63" count="1" type="stmt"/>
+      </file>
+    </package>
+    <package name="src.app.repositories.prisma.user-prisma">
+      <metrics statements="39" coveredstatements="30" conditionals="3" coveredconditionals="3" methods="4" coveredmethods="3"/>
+      <file name="create-user-repository.ts" path="C:\Users\centa\OneDrive\Documentos\projects\talker-manager\src\app\repositories\prisma\user-prisma\create-user-repository.ts">
+        <metrics statements="21" coveredstatements="12" conditionals="1" coveredconditionals="1" methods="2" coveredmethods="1"/>
+        <line num="1" count="1" type="stmt"/>
+        <line num="2" count="1" type="stmt"/>
+        <line num="3" count="1" type="stmt"/>
+        <line num="4" count="1" type="stmt"/>
+        <line num="5" count="1" type="stmt"/>
+        <line num="6" count="1" type="stmt"/>
+        <line num="7" count="1" type="stmt"/>
+        <line num="8" count="1" type="stmt"/>
+        <line num="9" count="1" type="stmt"/>
+        <line num="10" count="1" type="cond" truecount="1" falsecount="0"/>
+        <line num="11" count="1" type="stmt"/>
+        <line num="12" count="0" type="stmt"/>
+        <line num="13" count="0" type="stmt"/>
+        <line num="14" count="0" type="stmt"/>
+        <line num="15" count="0" type="stmt"/>
+        <line num="16" count="0" type="stmt"/>
+        <line num="17" count="0" type="stmt"/>
+        <line num="18" count="0" type="stmt"/>
+        <line num="19" count="0" type="stmt"/>
+        <line num="20" count="0" type="stmt"/>
+        <line num="21" count="1" type="stmt"/>
+      </file>
+      <file name="login-user-repository.ts" path="C:\Users\centa\OneDrive\Documentos\projects\talker-manager\src\app\repositories\prisma\user-prisma\login-user-repository.ts">
+        <metrics statements="18" coveredstatements="18" conditionals="2" coveredconditionals="2" methods="2" coveredmethods="2"/>
+        <line num="1" count="1" type="stmt"/>
+        <line num="2" count="1" type="stmt"/>
+        <line num="3" count="1" type="stmt"/>
+        <line num="4" count="1" type="stmt"/>
+        <line num="5" count="1" type="cond" truecount="1" falsecount="0"/>
+        <line num="6" count="1" type="cond" truecount="1" falsecount="0"/>
+        <line num="7" count="2" type="stmt"/>
+        <line num="8" count="2" type="stmt"/>
+        <line num="9" count="2" type="stmt"/>
+        <line num="10" count="2" type="stmt"/>
+        <line num="11" count="2" type="stmt"/>
+        <line num="12" count="2" type="stmt"/>
+        <line num="13" count="2" type="stmt"/>
+        <line num="14" count="2" type="stmt"/>
+        <line num="15" count="2" type="stmt"/>
+        <line num="16" count="2" type="stmt"/>
+        <line num="17" count="2" type="stmt"/>
+        <line num="18" count="1" type="stmt"/>
+      </file>
+    </package>
+    <package name="src.app.services.talker-services">
+      <metrics statements="55" coveredstatements="50" conditionals="8" coveredconditionals="7" methods="8" coveredmethods="7"/>
       <file name="talker.service.ts" path="C:\Users\centa\OneDrive\Documentos\projects\talker-manager\src\app\services\talker-services\talker.service.ts">
-        <metrics statements="45" coveredstatements="40" conditionals="6" coveredconditionals="5" methods="5" coveredmethods="4"/>
+        <metrics statements="55" coveredstatements="50" conditionals="8" coveredconditionals="7" methods="8" coveredmethods="7"/>
         <line num="1" count="1" type="stmt"/>
         <line num="2" count="1" type="stmt"/>
         <line num="3" count="1" type="stmt"/>
@@ -92,15 +310,15 @@
         <line num="16" count="1" type="cond" truecount="1" falsecount="0"/>
         <line num="17" count="1" type="stmt"/>
         <line num="18" count="1" type="cond" truecount="1" falsecount="0"/>
-        <line num="19" count="1" type="cond" truecount="0" falsecount="1"/>
+        <line num="19" count="2" type="cond" truecount="0" falsecount="1"/>
         <line num="20" count="0" type="stmt"/>
         <line num="21" count="0" type="stmt"/>
-        <line num="22" count="1" type="stmt"/>
-        <line num="23" count="1" type="stmt"/>
-        <line num="24" count="1" type="stmt"/>
-        <line num="25" count="1" type="cond" truecount="1" falsecount="0"/>
-        <line num="26" count="2" type="stmt"/>
-        <line num="27" count="2" type="cond" truecount="1" falsecount="0"/>
+        <line num="22" count="2" type="stmt"/>
+        <line num="23" count="2" type="stmt"/>
+        <line num="24" count="1" type="cond" truecount="1" falsecount="0"/>
+        <line num="25" count="1" type="stmt"/>
+        <line num="26" count="1" type="stmt"/>
+        <line num="27" count="1" type="stmt"/>
         <line num="28" count="1" type="stmt"/>
         <line num="29" count="1" type="stmt"/>
         <line num="30" count="1" type="stmt"/>
@@ -111,14 +329,333 @@
         <line num="35" count="1" type="stmt"/>
         <line num="36" count="1" type="stmt"/>
         <line num="37" count="1" type="stmt"/>
-        <line num="38" count="1" type="stmt"/>
-        <line num="39" count="1" type="stmt"/>
-        <line num="40" count="1" type="stmt"/>
+        <line num="38" count="0" type="stmt"/>
+        <line num="39" count="0" type="stmt"/>
+        <line num="40" count="0" type="stmt"/>
         <line num="41" count="1" type="stmt"/>
+        <line num="42" count="1" type="cond" truecount="1" falsecount="0"/>
+        <line num="43" count="1" type="stmt"/>
+        <line num="44" count="1" type="stmt"/>
+        <line num="45" count="1" type="stmt"/>
+        <line num="46" count="1" type="stmt"/>
+        <line num="47" count="1" type="cond" truecount="1" falsecount="0"/>
+        <line num="48" count="1" type="stmt"/>
+        <line num="49" count="1" type="stmt"/>
+        <line num="50" count="1" type="stmt"/>
+        <line num="51" count="1" type="cond" truecount="1" falsecount="0"/>
+        <line num="52" count="1" type="stmt"/>
+        <line num="53" count="1" type="stmt"/>
+        <line num="54" count="1" type="stmt"/>
+        <line num="55" count="1" type="stmt"/>
+      </file>
+    </package>
+    <package name="src.app.services.user-services">
+      <metrics statements="41" coveredstatements="34" conditionals="8" coveredconditionals="5" methods="6" coveredmethods="5"/>
+      <file name="create-user.service.ts" path="C:\Users\centa\OneDrive\Documentos\projects\talker-manager\src\app\services\user-services\create-user.service.ts">
+        <metrics statements="22" coveredstatements="15" conditionals="2" coveredconditionals="2" methods="3" coveredmethods="2"/>
+        <line num="1" count="1" type="stmt"/>
+        <line num="2" count="1" type="stmt"/>
+        <line num="3" count="1" type="stmt"/>
+        <line num="4" count="1" type="stmt"/>
+        <line num="5" count="1" type="stmt"/>
+        <line num="6" count="1" type="stmt"/>
+        <line num="7" count="1" type="stmt"/>
+        <line num="8" count="1" type="stmt"/>
+        <line num="9" count="1" type="stmt"/>
+        <line num="10" count="1" type="cond" truecount="1" falsecount="0"/>
+        <line num="11" count="1" type="cond" truecount="1" falsecount="0"/>
+        <line num="12" count="1" type="stmt"/>
+        <line num="13" count="1" type="stmt"/>
+        <line num="14" count="1" type="stmt"/>
+        <line num="15" count="0" type="stmt"/>
+        <line num="16" count="0" type="stmt"/>
+        <line num="17" count="0" type="stmt"/>
+        <line num="18" count="0" type="stmt"/>
+        <line num="19" count="0" type="stmt"/>
+        <line num="20" count="0" type="stmt"/>
+        <line num="21" count="0" type="stmt"/>
+        <line num="22" count="1" type="stmt"/>
+      </file>
+      <file name="login-user.service.ts" path="C:\Users\centa\OneDrive\Documentos\projects\talker-manager\src\app\services\user-services\login-user.service.ts">
+        <metrics statements="19" coveredstatements="19" conditionals="6" coveredconditionals="3" methods="3" coveredmethods="3"/>
+        <line num="1" count="1" type="stmt"/>
+        <line num="2" count="1" type="stmt"/>
+        <line num="3" count="1" type="stmt"/>
+        <line num="4" count="1" type="stmt"/>
+        <line num="5" count="1" type="cond" truecount="1" falsecount="0"/>
+        <line num="6" count="1" type="cond" truecount="1" falsecount="0"/>
+        <line num="7" count="1" type="stmt"/>
+        <line num="8" count="1" type="cond" truecount="1" falsecount="0"/>
+        <line num="9" count="2" type="stmt"/>
+        <line num="10" count="2" type="stmt"/>
+        <line num="11" count="2" type="stmt"/>
+        <line num="12" count="2" type="cond" truecount="0" falsecount="1"/>
+        <line num="13" count="2" type="cond" truecount="0" falsecount="1"/>
+        <line num="14" count="2" type="cond" truecount="0" falsecount="1"/>
+        <line num="15" count="2" type="stmt"/>
+        <line num="16" count="2" type="stmt"/>
+        <line num="17" count="2" type="stmt"/>
+        <line num="18" count="2" type="stmt"/>
+        <line num="19" count="1" type="stmt"/>
+      </file>
+    </package>
+    <package name="src.infra.controllers.talker-controllers">
+      <metrics statements="65" coveredstatements="22" conditionals="2" coveredconditionals="2" methods="7" coveredmethods="2"/>
+      <file name="talker.controller.ts" path="C:\Users\centa\OneDrive\Documentos\projects\talker-manager\src\infra\controllers\talker-controllers\talker.controller.ts">
+        <metrics statements="65" coveredstatements="22" conditionals="2" coveredconditionals="2" methods="7" coveredmethods="2"/>
+        <line num="1" count="1" type="stmt"/>
+        <line num="2" count="1" type="stmt"/>
+        <line num="3" count="1" type="stmt"/>
+        <line num="4" count="1" type="stmt"/>
+        <line num="5" count="1" type="stmt"/>
+        <line num="6" count="1" type="stmt"/>
+        <line num="7" count="1" type="cond" truecount="1" falsecount="0"/>
+        <line num="8" count="1" type="stmt"/>
+        <line num="9" count="1" type="stmt"/>
+        <line num="10" count="1" type="cond" truecount="1" falsecount="0"/>
+        <line num="11" count="1" type="stmt"/>
+        <line num="12" count="1" type="stmt"/>
+        <line num="13" count="1" type="stmt"/>
+        <line num="14" count="1" type="stmt"/>
+        <line num="15" count="0" type="stmt"/>
+        <line num="16" count="0" type="stmt"/>
+        <line num="17" count="0" type="stmt"/>
+        <line num="18" count="0" type="stmt"/>
+        <line num="19" count="0" type="stmt"/>
+        <line num="20" count="0" type="stmt"/>
+        <line num="21" count="0" type="stmt"/>
+        <line num="22" count="0" type="stmt"/>
+        <line num="23" count="0" type="stmt"/>
+        <line num="24" count="0" type="stmt"/>
+        <line num="25" count="0" type="stmt"/>
+        <line num="26" count="0" type="stmt"/>
+        <line num="27" count="0" type="stmt"/>
+        <line num="28" count="0" type="stmt"/>
+        <line num="29" count="0" type="stmt"/>
+        <line num="30" count="0" type="stmt"/>
+        <line num="31" count="1" type="stmt"/>
+        <line num="32" count="0" type="stmt"/>
+        <line num="33" count="0" type="stmt"/>
+        <line num="34" count="0" type="stmt"/>
+        <line num="35" count="1" type="stmt"/>
+        <line num="36" count="1" type="stmt"/>
+        <line num="37" count="0" type="stmt"/>
+        <line num="38" count="0" type="stmt"/>
+        <line num="39" count="0" type="stmt"/>
+        <line num="40" count="0" type="stmt"/>
+        <line num="41" count="0" type="stmt"/>
+        <line num="42" count="1" type="stmt"/>
+        <line num="43" count="1" type="stmt"/>
+        <line num="44" count="0" type="stmt"/>
+        <line num="45" count="0" type="stmt"/>
+        <line num="46" count="0" type="stmt"/>
+        <line num="47" count="0" type="stmt"/>
+        <line num="48" count="1" type="stmt"/>
+        <line num="49" count="1" type="stmt"/>
+        <line num="50" count="0" type="stmt"/>
+        <line num="51" count="0" type="stmt"/>
+        <line num="52" count="0" type="stmt"/>
+        <line num="53" count="0" type="stmt"/>
+        <line num="54" count="0" type="stmt"/>
+        <line num="55" count="0" type="stmt"/>
+        <line num="56" count="0" type="stmt"/>
+        <line num="57" count="0" type="stmt"/>
+        <line num="58" count="0" type="stmt"/>
+        <line num="59" count="0" type="stmt"/>
+        <line num="60" count="0" type="stmt"/>
+        <line num="61" count="0" type="stmt"/>
+        <line num="62" count="0" type="stmt"/>
+        <line num="63" count="0" type="stmt"/>
+        <line num="64" count="0" type="stmt"/>
+        <line num="65" count="1" type="stmt"/>
+      </file>
+    </package>
+    <package name="src.infra.controllers.user-controllers">
+      <metrics statements="45" coveredstatements="35" conditionals="5" coveredconditionals="5" methods="6" coveredmethods="5"/>
+      <file name="create-user.controller.ts" path="C:\Users\centa\OneDrive\Documentos\projects\talker-manager\src\infra\controllers\user-controllers\create-user.controller.ts">
+        <metrics statements="25" coveredstatements="15" conditionals="2" coveredconditionals="2" methods="3" coveredmethods="2"/>
+        <line num="1" count="1" type="stmt"/>
+        <line num="2" count="1" type="stmt"/>
+        <line num="3" count="1" type="stmt"/>
+        <line num="4" count="1" type="stmt"/>
+        <line num="5" count="1" type="cond" truecount="1" falsecount="0"/>
+        <line num="6" count="1" type="stmt"/>
+        <line num="7" count="1" type="stmt"/>
+        <line num="8" count="1" type="cond" truecount="1" falsecount="0"/>
+        <line num="9" count="1" type="stmt"/>
+        <line num="10" count="1" type="stmt"/>
+        <line num="11" count="1" type="stmt"/>
+        <line num="12" count="1" type="stmt"/>
+        <line num="13" count="1" type="stmt"/>
+        <line num="14" count="1" type="stmt"/>
+        <line num="15" count="0" type="stmt"/>
+        <line num="16" count="0" type="stmt"/>
+        <line num="17" count="0" type="stmt"/>
+        <line num="18" count="0" type="stmt"/>
+        <line num="19" count="0" type="stmt"/>
+        <line num="20" count="0" type="stmt"/>
+        <line num="21" count="0" type="stmt"/>
+        <line num="22" count="0" type="stmt"/>
+        <line num="23" count="0" type="stmt"/>
+        <line num="24" count="0" type="stmt"/>
+        <line num="25" count="1" type="stmt"/>
+      </file>
+      <file name="login-user.controller.ts" path="C:\Users\centa\OneDrive\Documentos\projects\talker-manager\src\infra\controllers\user-controllers\login-user.controller.ts">
+        <metrics statements="20" coveredstatements="20" conditionals="3" coveredconditionals="3" methods="3" coveredmethods="3"/>
+        <line num="1" count="1" type="stmt"/>
+        <line num="2" count="1" type="stmt"/>
+        <line num="3" count="1" type="stmt"/>
+        <line num="4" count="1" type="stmt"/>
+        <line num="5" count="1" type="cond" truecount="1" falsecount="0"/>
+        <line num="6" count="1" type="stmt"/>
+        <line num="7" count="1" type="stmt"/>
+        <line num="8" count="1" type="cond" truecount="1" falsecount="0"/>
+        <line num="9" count="1" type="stmt"/>
+        <line num="10" count="1" type="stmt"/>
+        <line num="11" count="1" type="stmt"/>
+        <line num="12" count="1" type="stmt"/>
+        <line num="13" count="1" type="stmt"/>
+        <line num="14" count="1" type="cond" truecount="1" falsecount="0"/>
+        <line num="15" count="2" type="stmt"/>
+        <line num="16" count="2" type="stmt"/>
+        <line num="17" count="2" type="stmt"/>
+        <line num="18" count="2" type="stmt"/>
+        <line num="19" count="2" type="stmt"/>
+        <line num="20" count="1" type="stmt"/>
+      </file>
+    </package>
+    <package name="src.infra.middleware">
+      <metrics statements="77" coveredstatements="36" conditionals="16" coveredconditionals="14" methods="4" coveredmethods="3"/>
+      <file name="login-validate.ts" path="C:\Users\centa\OneDrive\Documentos\projects\talker-manager\src\infra\middleware\login-validate.ts">
+        <metrics statements="31" coveredstatements="31" conditionals="15" coveredconditionals="13" methods="2" coveredmethods="2"/>
+        <line num="1" count="1" type="stmt"/>
+        <line num="2" count="1" type="stmt"/>
+        <line num="3" count="1" type="cond" truecount="1" falsecount="0"/>
+        <line num="4" count="1" type="cond" truecount="1" falsecount="0"/>
+        <line num="5" count="6" type="stmt"/>
+        <line num="6" count="6" type="stmt"/>
+        <line num="7" count="6" type="stmt"/>
+        <line num="8" count="6" type="stmt"/>
+        <line num="9" count="6" type="stmt"/>
+        <line num="10" count="6" type="stmt"/>
+        <line num="11" count="6" type="cond" truecount="1" falsecount="0"/>
+        <line num="12" count="1" type="stmt"/>
+        <line num="13" count="1" type="stmt"/>
+        <line num="14" count="5" type="cond" truecount="1" falsecount="0"/>
+        <line num="15" count="6" type="cond" truecount="1" falsecount="0"/>
+        <line num="16" count="1" type="stmt"/>
+        <line num="17" count="1" type="stmt"/>
+        <line num="18" count="4" type="cond" truecount="1" falsecount="0"/>
+        <line num="19" count="4" type="stmt"/>
+        <line num="20" count="4" type="stmt"/>
+        <line num="21" count="4" type="stmt"/>
+        <line num="22" count="6" type="cond" truecount="2" falsecount="1"/>
+        <line num="23" count="6" type="cond" truecount="3" falsecount="1"/>
+        <line num="24" count="6" type="stmt"/>
+        <line num="25" count="6" type="cond" truecount="2" falsecount="0"/>
+        <line num="26" count="2" type="stmt"/>
+        <line num="27" count="2" type="stmt"/>
+        <line num="28" count="2" type="stmt"/>
+        <line num="29" count="2" type="stmt"/>
+        <line num="30" count="2" type="stmt"/>
+        <line num="31" count="1" type="stmt"/>
+      </file>
+      <file name="talker-validate.ts" path="C:\Users\centa\OneDrive\Documentos\projects\talker-manager\src\infra\middleware\talker-validate.ts">
+        <metrics statements="46" coveredstatements="5" conditionals="1" coveredconditionals="1" methods="2" coveredmethods="1"/>
+        <line num="1" count="1" type="stmt"/>
+        <line num="2" count="1" type="stmt"/>
+        <line num="3" count="1" type="cond" truecount="1" falsecount="0"/>
+        <line num="4" count="1" type="stmt"/>
+        <line num="5" count="0" type="stmt"/>
+        <line num="6" count="0" type="stmt"/>
+        <line num="7" count="0" type="stmt"/>
+        <line num="8" count="0" type="stmt"/>
+        <line num="9" count="0" type="stmt"/>
+        <line num="10" count="0" type="stmt"/>
+        <line num="11" count="0" type="stmt"/>
+        <line num="12" count="0" type="stmt"/>
+        <line num="13" count="0" type="stmt"/>
+        <line num="14" count="0" type="stmt"/>
+        <line num="15" count="0" type="stmt"/>
+        <line num="16" count="0" type="stmt"/>
+        <line num="17" count="0" type="stmt"/>
+        <line num="18" count="0" type="stmt"/>
+        <line num="19" count="0" type="stmt"/>
+        <line num="20" count="0" type="stmt"/>
+        <line num="21" count="0" type="stmt"/>
+        <line num="22" count="0" type="stmt"/>
+        <line num="23" count="0" type="stmt"/>
+        <line num="24" count="0" type="stmt"/>
+        <line num="25" count="0" type="stmt"/>
+        <line num="26" count="0" type="stmt"/>
+        <line num="27" count="0" type="stmt"/>
+        <line num="28" count="0" type="stmt"/>
+        <line num="29" count="0" type="stmt"/>
+        <line num="30" count="0" type="stmt"/>
+        <line num="31" count="0" type="stmt"/>
+        <line num="32" count="0" type="stmt"/>
+        <line num="33" count="0" type="stmt"/>
+        <line num="34" count="0" type="stmt"/>
+        <line num="35" count="0" type="stmt"/>
+        <line num="36" count="0" type="stmt"/>
+        <line num="37" count="0" type="stmt"/>
+        <line num="38" count="0" type="stmt"/>
+        <line num="39" count="0" type="stmt"/>
+        <line num="40" count="0" type="stmt"/>
+        <line num="41" count="0" type="stmt"/>
         <line num="42" count="0" type="stmt"/>
         <line num="43" count="0" type="stmt"/>
         <line num="44" count="0" type="stmt"/>
-        <line num="45" count="1" type="stmt"/>
+        <line num="45" count="0" type="stmt"/>
+        <line num="46" count="1" type="stmt"/>
+      </file>
+    </package>
+    <package name="src.infra.routes">
+      <metrics statements="36" coveredstatements="36" conditionals="3" coveredconditionals="3" methods="3" coveredmethods="3"/>
+      <file name="routes.ts" path="C:\Users\centa\OneDrive\Documentos\projects\talker-manager\src\infra\routes\routes.ts">
+        <metrics statements="8" coveredstatements="8" conditionals="1" coveredconditionals="1" methods="1" coveredmethods="1"/>
+        <line num="1" count="1" type="stmt"/>
+        <line num="2" count="1" type="stmt"/>
+        <line num="3" count="1" type="stmt"/>
+        <line num="4" count="1" type="stmt"/>
+        <line num="5" count="1" type="cond" truecount="1" falsecount="0"/>
+        <line num="6" count="1" type="stmt"/>
+        <line num="7" count="1" type="stmt"/>
+        <line num="8" count="1" type="stmt"/>
+      </file>
+      <file name="talker.routes.ts" path="C:\Users\centa\OneDrive\Documentos\projects\talker-manager\src\infra\routes\talker.routes.ts">
+        <metrics statements="15" coveredstatements="15" conditionals="1" coveredconditionals="1" methods="1" coveredmethods="1"/>
+        <line num="1" count="1" type="stmt"/>
+        <line num="2" count="1" type="stmt"/>
+        <line num="3" count="1" type="stmt"/>
+        <line num="4" count="1" type="stmt"/>
+        <line num="5" count="1" type="cond" truecount="1" falsecount="0"/>
+        <line num="6" count="1" type="stmt"/>
+        <line num="7" count="1" type="stmt"/>
+        <line num="8" count="1" type="stmt"/>
+        <line num="9" count="1" type="stmt"/>
+        <line num="10" count="1" type="stmt"/>
+        <line num="11" count="1" type="stmt"/>
+        <line num="12" count="1" type="stmt"/>
+        <line num="13" count="1" type="stmt"/>
+        <line num="14" count="1" type="stmt"/>
+        <line num="15" count="1" type="stmt"/>
+      </file>
+      <file name="user.routes.ts" path="C:\Users\centa\OneDrive\Documentos\projects\talker-manager\src\infra\routes\user.routes.ts">
+        <metrics statements="13" coveredstatements="13" conditionals="1" coveredconditionals="1" methods="1" coveredmethods="1"/>
+        <line num="1" count="1" type="stmt"/>
+        <line num="2" count="1" type="stmt"/>
+        <line num="3" count="1" type="stmt"/>
+        <line num="4" count="1" type="stmt"/>
+        <line num="5" count="1" type="stmt"/>
+        <line num="6" count="1" type="cond" truecount="1" falsecount="0"/>
+        <line num="7" count="1" type="stmt"/>
+        <line num="8" count="1" type="stmt"/>
+        <line num="9" count="1" type="stmt"/>
+        <line num="10" count="1" type="stmt"/>
+        <line num="11" count="1" type="stmt"/>
+        <line num="12" count="1" type="stmt"/>
+        <line num="13" count="1" type="stmt"/>
       </file>
     </package>
   </project>

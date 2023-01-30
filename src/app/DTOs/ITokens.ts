@@ -4,8 +4,8 @@ export interface ITokenConfig {
   
   export interface ITokenPayload {
     id?:string,
-    name:string,
-    email: string
+    name?:string,
+    email?: string
   }
   
   export interface IDecodeUserToken {

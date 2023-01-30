@@ -10,7 +10,6 @@ export interface IUserID {
     email: string;
   }
   
-  
   export interface IUserLogin extends IUserEmail{
     
     password?: string;
