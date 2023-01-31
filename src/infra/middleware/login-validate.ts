@@ -21,7 +21,8 @@ export class LoginValidate {
     });
     const passwordIsValid = user?.some((item) => item.password === password);
     const emailIsValid = user?.some((item) => item.email === email);
-
+    
+    
     if (!passwordIsValid || !emailIsValid) {
       return res.status(401).json({ message: "Incorrect email or password" });
     }

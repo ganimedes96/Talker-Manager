@@ -29,6 +29,10 @@ export class PrismaTalkerRepository implements TalkersRepository {
     const talkers = await prisma.talker.findMany();
     return talkers;
   }
+  async findTalkerByQuery(name: string) {
+    const talker = await prisma.talker.findFirst({where: {name}});
+    return talker
+  }
   async findTalkerById(id: string) {
     const findTalker = await prisma.talker.findUnique({ where: { id } });
     return findTalker;
@@ -55,7 +59,7 @@ export class PrismaTalkerRepository implements TalkersRepository {
         age: true,
         password: true,
         rate: true,
-        userId: true
+        userId: true,
       },
     });
     return resultRequest;

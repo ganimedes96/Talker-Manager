@@ -24,13 +24,23 @@ export class TalkerController {
       rate,
       userId,
     };
-    
+
     const result = await this.talkerService.create(userData);
     return res.status(201).json(result);
   };
   public getTalks = async (_req: Request, res: Response) => {
     const talks = await this.talkerService.findManyTalkers();
     return res.status(200).json(talks);
+  };
+
+  public findTalkerByQuery = async (req: Request, res: Response) => {
+    const talkerQuery = req.query;
+    console.log('Name', talkerQuery);
+    
+    const talker = await this.talkerService.findTalkerByQuery(
+      String(talkerQuery.name)
+    );
+    return res.status(200).json(talker);
   };
 
   public findTakerById = async (req: Request, res: Response) => {

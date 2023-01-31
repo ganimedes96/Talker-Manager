@@ -32,7 +32,6 @@ const token =
   "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjkwODkxMzI4LWQ4NmItNGQ3Zi04NTdmLWUzOTJmZjU4NDU5MiIsImVtYWlsIjoiaHVkc29uQGVtYWlsLmNvbSIsIm5hbWUiOiJodWRzb24iLCJpYXQiOjE2NzUwMzQ4OTMsImV4cCI6MTY3NTEwNjg5M30.Y4gJ-gpn_0LgCQLc_XVJO4m_v438i4htuqZK-Um96Fs";
 
 describe("test login route ", () => {
- 
   it("Should be possible to login  successfully", async () => {
     const user = {
       email: "hudson@email.com",

@@ -16,6 +16,7 @@ export interface TalkersRepository {
   deleteTalkerById: (id: string) => Promise<void>;
   updateTalkerById: (id: ITalker) => Promise<TalkersCreateData>;
   findMany: () => Promise<TalkersCreateData[]>;
+  findTalkerByQuery: (name: string) => Promise<TalkersCreateData | null>
 }
 
 export interface GetTalkersRepository {

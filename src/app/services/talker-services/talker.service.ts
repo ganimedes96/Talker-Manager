@@ -39,6 +39,11 @@ export class TalkerService {
     return talkers.map((talker) => this.createTalkerDomain(talker))
   }
 
+  async findTalkerByQuery(name: string) {
+    const talker = await this.talkersRepository.findTalkerByQuery(name) 
+    return this.createTalkerDomain(talker)
+  }
+
   async findTalkerById(id: string) {
     const resultRequest = await this.talkersRepository.findTalkerById(id);
     return this.createTalkerDomain(resultRequest);

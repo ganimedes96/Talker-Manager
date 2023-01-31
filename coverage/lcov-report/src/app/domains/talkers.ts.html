@@ -23,9 +23,9 @@
         <div class='clearfix'>
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">52.3% </span>
+                <span class="strong">55% </span>
                 <span class="quiet">Statements</span>
-                <span class='fraction'>34/65</span>
+                <span class='fraction'>33/60</span>
             </div>
         
             
@@ -44,9 +44,9 @@
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">52.3% </span>
+                <span class="strong">55% </span>
                 <span class="quiet">Lines</span>
-                <span class='fraction'>34/65</span>
+                <span class='fraction'>33/60</span>
             </div>
         
             
@@ -123,11 +123,7 @@
 <a name='L58'></a><a href='#L58'>58</a>
 <a name='L59'></a><a href='#L59'>59</a>
 <a name='L60'></a><a href='#L60'>60</a>
-<a name='L61'></a><a href='#L61'>61</a>
-<a name='L62'></a><a href='#L62'>62</a>
-<a name='L63'></a><a href='#L63'>63</a>
-<a name='L64'></a><a href='#L64'>64</a>
-<a name='L65'></a><a href='#L65'>65</a></td><td class="line-coverage quiet"><span class="cline-any cline-yes">1x</span>
+<a name='L61'></a><a href='#L61'>61</a></td><td class="line-coverage quiet"><span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">1x</span>
@@ -146,16 +142,8 @@
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-yes">1x</span>
@@ -191,78 +179,78 @@
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">1x</span></td><td class="text"><pre class="prettyprint lang-js">import {ITalker} from '../DTOs/ITalkers'
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">import { ITalker } from "../DTOs/ITalkers";
 &nbsp;
 export class <span class="fstat-no" title="function not covered" >TalkerDomain {</span>
-    private id?: string;
-    private name: string;
-    private email: string;
-    private password: string;
-    private userId?: string
-    private age: number;
-    private rate: number;
+  private id?: string;
+  private name: string;
+  private email: string;
+  private password: string;
+  private userId?: string;
+  private age: number;
+  private rate: number;
 &nbsp;
-<span class="fstat-no" title="function not covered" >   constructor (talker: ITalker) {</span>
+<span class="fstat-no" title="function not covered" >  constructor(talker: ITalker) {</span>
 <span class="cstat-no" title="statement not covered" >    this.id = talker.id;</span>
 <span class="cstat-no" title="statement not covered" >    this.name = talker.name;</span>
 <span class="cstat-no" title="statement not covered" >    this.email = talker.email;</span>
 <span class="cstat-no" title="statement not covered" >    this.password = talker.password;</span>
-<span class="cstat-no" title="statement not covered" >    this.userId = talker.userId,</span>
-<span class="cstat-no" title="statement not covered" >    this.age = talker.age;</span>
+<span class="cstat-no" title="statement not covered" >    (this.userId = talker.userId), (this.age = talker.age);</span>
 <span class="cstat-no" title="statement not covered" >    this.rate = talker.rate;</span>
-<span class="cstat-no" title="statement not covered" >   }</span>
+<span class="cstat-no" title="statement not covered" >  }</span>
 &nbsp;
-   public <span class="fstat-no" title="function not covered" >getName() {</span>
-<span class="cstat-no" title="statement not covered" >    return this.name</span>
-<span class="cstat-no" title="statement not covered" >   }</span>
+  public <span class="fstat-no" title="function not covered" >getName() {</span>
+<span class="cstat-no" title="statement not covered" >    return this.name;</span>
+<span class="cstat-no" title="statement not covered" >  }</span>
 &nbsp;
-   public <span class="fstat-no" title="function not covered" >setName(name: string) {</span>
-<span class="cstat-no" title="statement not covered" >     if (name.length === 0) {</span>
-<span class="cstat-no" title="statement not covered" >      throw new Error("name is");</span>
-<span class="cstat-no" title="statement not covered" >    }</span>
-<span class="cstat-no" title="statement not covered" >    this.name = name</span>
-<span class="cstat-no" title="statement not covered" >   }</span>
+  public <span class="fstat-no" title="function not covered" >setName(name: string) {</span>
+<span class="cstat-no" title="statement not covered" >    this.name = name;</span>
+<span class="cstat-no" title="statement not covered" >  }</span>
 &nbsp;
-   public <span class="fstat-no" title="function not covered" >getEmail() {</span>
-<span class="cstat-no" title="statement not covered" >    return this.email</span>
-<span class="cstat-no" title="statement not covered" >   }</span>
+  public <span class="fstat-no" title="function not covered" >getEmail() {</span>
+<span class="cstat-no" title="statement not covered" >    return this.email;</span>
+<span class="cstat-no" title="statement not covered" >  }</span>
 &nbsp;
-   public <span class="fstat-no" title="function not covered" >setEmail(email: string) {</span>
-<span class="cstat-no" title="statement not covered" >    this.email = email</span>
-<span class="cstat-no" title="statement not covered" >   }</span>
+  public <span class="fstat-no" title="function not covered" >setEmail(email: string) {</span>
+<span class="cstat-no" title="statement not covered" >    this.email = email;</span>
+<span class="cstat-no" title="statement not covered" >  }</span>
 &nbsp;
-   public <span class="fstat-no" title="function not covered" >getPassword() {</span>
-<span class="cstat-no" title="statement not covered" >    return this.password</span>
-<span class="cstat-no" title="statement not covered" >   }</span>
+  public <span class="fstat-no" title="function not covered" >getPassword() {</span>
+<span class="cstat-no" title="statement not covered" >    return this.password;</span>
+<span class="cstat-no" title="statement not covered" >  }</span>
 &nbsp;
-   public <span class="fstat-no" title="function not covered" >setPassword(password: string) {</span>
-<span class="cstat-no" title="statement not covered" >    this.password = password</span>
-<span class="cstat-no" title="statement not covered" >   }</span>
+  public <span class="fstat-no" title="function not covered" >setPassword(password: string) {</span>
+<span class="cstat-no" title="statement not covered" >    this.password = password;</span>
+<span class="cstat-no" title="statement not covered" >  }</span>
 &nbsp;
-   public <span class="fstat-no" title="function not covered" >getUserId() {</span>
-<span class="cstat-no" title="statement not covered" >    return this.userId</span>
-<span class="cstat-no" title="statement not covered" >   }</span>
+  public <span class="fstat-no" title="function not covered" >getUserId() {</span>
+<span class="cstat-no" title="statement not covered" >    return this.userId;</span>
+<span class="cstat-no" title="statement not covered" >  }</span>
 &nbsp;
-   public <span class="fstat-no" title="function not covered" >getAge() {</span>
-<span class="cstat-no" title="statement not covered" >    return this.age</span>
-<span class="cstat-no" title="statement not covered" >   }</span>
+  public <span class="fstat-no" title="function not covered" >getAge() {</span>
+<span class="cstat-no" title="statement not covered" >    return this.age;</span>
+<span class="cstat-no" title="statement not covered" >  }</span>
 &nbsp;
-   public <span class="fstat-no" title="function not covered" >setAge(age: number) {</span>
-<span class="cstat-no" title="statement not covered" >    this.age = age</span>
-<span class="cstat-no" title="statement not covered" >   }</span>
+  public <span class="fstat-no" title="function not covered" >setAge(age: number) {</span>
+<span class="cstat-no" title="statement not covered" >    this.age = age;</span>
+<span class="cstat-no" title="statement not covered" >  }</span>
 &nbsp;
-   public <span class="fstat-no" title="function not covered" >getRate() {</span>
-<span class="cstat-no" title="statement not covered" >    return this.rate</span>
-<span class="cstat-no" title="statement not covered" >   }</span>
-&nbsp;
-} </pre></td></tr></table></pre>
+  public <span class="fstat-no" title="function not covered" >getRate() {</span>
+<span class="cstat-no" title="statement not covered" >    return this.rate;</span>
+<span class="cstat-no" title="statement not covered" >  }</span>
+}
+&nbsp;</pre></td></tr></table></pre>
 
                 <div class='push'></div><!-- for sticky footer -->
             </div><!-- /wrapper -->
             <div class='footer quiet pad2 space-top1 center small'>
                 Code coverage generated by
                 <a href="https://istanbul.js.org/" target="_blank" rel="noopener noreferrer">istanbul</a>
-                at 2023-01-30T13:51:57.400Z
+                at 2023-01-31T15:26:40.591Z
             </div>
         <script src="../../../prettify.js"></script>
         <script>
